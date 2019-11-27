@@ -34,6 +34,15 @@ label_color=xresource:i3xrocks.label.color
 #[nm-vpn]
 #interval=5
 
+# Show window names for libreoffice and evince
+# Uses python3, needs i3ipc
+# Adding or removing instances should be straightforward in the script
+
+[focused-name]
+label= 
+command=~/.config/regolith/i3xrocks/scripts/focused-window-name.py
+interval=1
+
 # Spotify icon \uF1BC
 [spotify]
 label= 
@@ -41,10 +50,6 @@ command=~/.config/regolith/i3xrocks/scripts/spotify.py
 # color=#81b71a
 interval=1
 
-[focused-name]
-label= 
-command=~/.config/regolith/i3xrocks/scripts/focused-window-name.py
-interval=1
 
 # Wifi
 #

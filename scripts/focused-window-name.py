@@ -8,6 +8,6 @@ focused = i3.get_tree().find_focused()
 
 # remove the if if you want everything printed
 if focused.window_instance in ["libreoffice","evince"]:
-    print(focused.name,focused.window_class,focused.window_instance)
+    print(focused.name)
     print(focused.name[:10])
 
